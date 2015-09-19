@@ -45,6 +45,13 @@
 			return myQueue;
 		};
 		
+		// remove from queue
+		MovieQueueService.prototype.removeFromQueue = function(item) {
+			var index = myQueue.indexOf(item);
+  			myQueue.splice(index, 1);
+			  
+			return myQueue;
+		}
 		// returning the movie service
 		return MovieQueueService; 
 	}]);
