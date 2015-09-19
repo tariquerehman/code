@@ -12,7 +12,7 @@ You need git to clone the https://github.com/tariquerehman/code repository. You 
 We also use a number of node.js tools to initialize and test. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Cloneing the repo
+### Cloning the repo
 
 Clone the angular-seed repository using [git][git]:
 
