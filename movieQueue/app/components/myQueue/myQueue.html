@@ -1,0 +1,21 @@
+<style>
+	img {
+		width: 100px;
+	}
+	td {
+		padding: 10px;
+		border-top: 1px solid #c9c9c9;
+	}
+</style>
+<div class="row">
+	<p>My Queue</p>
+	<table>
+		<tbody>
+			<tr ng-repeat="movie in movies">
+				<td><img ng-src="{{movie.poster_url}}" /></td>
+				<td>{{ movie.title }}</td>
+				<td><button type="button" ng-click="removeFromQueue(movie)" class="btn btn-default">Remove From Queue </button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
