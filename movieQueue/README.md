@@ -14,7 +14,7 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 
 ### Cloning the repo
 
-Clone the angular-seed repository using [git][git]:
+Clone the repository using [git][git]:
 
 ```
 git clone https://github.com/tariquerehman/code.git
