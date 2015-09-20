@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Questionnaire score is: {{ score }}</div>
+    <hr />
+    <div class="panel-body" ng-show="showList">
+        <div class="row">
+            <p>Please select one of the following to assist you.</p>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="radio" ng-model="therapistSelected" ng-value="0" id="therepist0">
+                    <label for="therepist0">
+                        John Doe (PhD)
+                    </label>
+                    Has 10 years of experience
+                </div>
+                <div class="input-group">
+                    <input type="radio" ng-model="therapistSelected" ng-value="1" id="therepist1">
+                    <label for="therepist1">
+                        Jane Smith (PhD)
+                    </label>
+                    Has 20 years of experience
+                </div>
+                <div class="input-group">
+                    <input type="radio" ng-model="therapistSelected" ng-value="2" id="therepist2">
+                    <label for="therepist2">
+                        Maggie Smith (PhD)
+                    </label>
+                    Has 8 years of experience
+                </div>
+                <hr />
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-default navbar-btn" ng-click="saveAndNext()">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body" ng-show="!showList">
+        <p>Thank you!</p>
+    <div>
+</div>
