@@ -6,6 +6,7 @@
 		var questionnaireService = new QuestionnaireService();
 		var index = 0;
 		var totalQuestions = 0;
+		$scope.answer = 0;
 		$scope.question = questionnaireService.getQuestion(index);
 		totalQuestions = questionnaireService.totalQuestions();
 
@@ -14,7 +15,7 @@
 			index = index + 1;
 			if ( totalQuestions > index) {
 				$scope.question = questionnaireService.getQuestion(index);
-				$scope.answer = null;	// reset				
+				$scope.answer = 0;	// reset				
 			}
 			else {
 				questionnaireService.calculateScore();

@@ -7,6 +7,8 @@
 		$scope.score = questionnaireService.getScore();
 		$scope.therapists = [];
 		$scope.showList = false;
+		$scope.therapistSelected = 0;
+		
 		var init = function() {
 			if ( $scope.score >= 10 ) {
 				$scope.showList = true;
