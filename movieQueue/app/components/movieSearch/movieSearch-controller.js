@@ -8,7 +8,6 @@
 		
 		movieQueueService.getMovies().then(function(moviesResult){
 			$scope.movies = moviesResult.data;
-			$scope.movies = moviesResult.data;
 			$scope.pageSize = moviesResult.pageSize;
 			$scope.totalResults = moviesResult.totalResults;
 		});
