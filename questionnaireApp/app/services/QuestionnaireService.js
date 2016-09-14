@@ -5,6 +5,8 @@
 	questionnaire.service("QuestionnaireService", ["$http", "$q", function($http, $q){
 		
 		// internal structures not exposed to the ouside world
+		// TODO: change structure and corresponding components to use the following data structure:
+		// questions: [{question:'...', answer: 0},{question: '...'. answer: 0}...]
 		var questions = [
 			"Little interest or pleasure in doing things",
 			"Feeling down, depressed, or hopeless",
